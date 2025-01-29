@@ -1,4 +1,4 @@
-Prefix: : <http://www.temp.de/coato>
+Prefix: : <https://w3id.org/coato/>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -8,8 +8,8 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 
-Ontology: <http://www.temp.de/coato>
-<http://www.temp.de/coato/1.0.0>
+Ontology: <https://w3id.org/coato/>
+<https://w3id.org/coato/v1.0.0/>
 Import: <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>
 
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000112>
