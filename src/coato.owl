@@ -9,7 +9,7 @@ Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 Ontology: <https://w3id.org/coato/>
-<https://w3id.org/coato/1.1.0>
+<https://w3id.org/coato/2.0.0>
 Import: <https://w3id.org/pmd/co/3.0.0>
 
 Annotations: 
@@ -54,7 +54,7 @@ AnnotationProperty: <http://www.w3.org/2004/02/skos/core#altLabel>
 AnnotationProperty: <http://www.w3.org/2004/02/skos/core#definition>
 
     
-AnnotationProperty: <https://w3id.org/coato/coat_00001>
+AnnotationProperty: coat_00001
 
     Annotations: 
         rdfs:label "todo"@en
@@ -354,7 +354,10 @@ In this example (a portion of) gold and (a portion of) silver are both object ag
         rdfs:label "consists of"@en
     
     
-ObjectProperty: <https://w3id.org/coato/coat_00003>
+ObjectProperty: <https://w3id.org/pmd/co/PMD_0025006>
+
+    
+ObjectProperty: coat_00003
 
     Annotations: 
         rdfs:label "has start time"@en,
@@ -373,9 +376,6 @@ ObjectProperty: <https://w3id.org/coato/coat_00003>
     Range: 
         <http://purl.obolibrary.org/obo/BFO_0000203>
     
-    
-ObjectProperty: <https://w3id.org/pmd/co/PMD_0025006>
-
     
 ObjectProperty: owl:topObjectProperty
 
@@ -432,7 +432,7 @@ Class: <http://purl.obolibrary.org/obo/BFO_0000019>
 
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "Talk to the PMDCore guys about sorting qualities out. These should not be in domain ontologies. And they need to be categorised better."@en,
-        <https://w3id.org/coato/coat_00001> "Talk to PMDCore Guys about qualities. They should not be in domain ontologies. And they need to be sorted better."
+        coat_00001 "Talk to PMDCore Guys about qualities. They should not be in domain ontologies. And they need to be sorted better."
     
     
 Class: <http://purl.obolibrary.org/obo/BFO_0000023>
@@ -596,7 +596,7 @@ Class: <https://w3id.org/coato/#coat_00005>
     
     SubClassOf: 
         <https://w3id.org/coato/#coat_00000>,
-        <http://purl.obolibrary.org/obo/RO_0002333> some <https://w3id.org/coato/coat_00002>
+        <http://purl.obolibrary.org/obo/RO_0002333> some coat_00002
     
     
 Class: <https://w3id.org/coato/#coat_00006>
@@ -649,7 +649,7 @@ https://www.sputtertargets.net/blog/table-comparison-physical-and-chemical-vapor
         rdfs:label "physical vapour deposition"@en,
         rdfs:label "physikalische Gasphasenabscheidung"@de,
         <http://www.w3.org/2004/02/skos/core#altLabel> "PVD-Verfahren"@de,
-        <https://w3id.org/coato/coat_00001> "Revisit with domain experts."@en
+        coat_00001 "Revisit with domain experts."@en
     
     SubClassOf: 
         <https://w3id.org/coato/#coat_00021>
@@ -667,7 +667,7 @@ Class: <https://w3id.org/coato/#coat_00009>
         rdfs:label "coating process"@en
     
     SubClassOf: 
-        <https://w3id.org/coato/coat_00016>,
+        coat_00016,
         <http://purl.obolibrary.org/obo/RO_0004008> some <https://w3id.org/coato/#coat_00016>,
         <https://w3id.org/coato/#coat_00023> some <http://purl.obolibrary.org/obo/BFO_0000030>
     
@@ -806,7 +806,7 @@ Handbook"@en,
         rdfs:label "chemical vapour deposition"@en,
         rdfs:label "chemische Gasphasenabscheidung"@de,
         <http://www.w3.org/2004/02/skos/core#altLabel> "CVD-Verfahren"@de,
-        <https://w3id.org/coato/coat_00001> "revisit with domain experts"@de
+        coat_00001 "revisit with domain experts"@de
     
     SubClassOf: 
         <https://w3id.org/coato/#coat_00021>
@@ -1422,7 +1422,7 @@ Class: <https://w3id.org/coato/#coat_00110>
     
     SubClassOf: 
         <https://w3id.org/coato/#coat_00109>
-         and (<https://w3id.org/pmd/co/PMD_0025006> some <https://w3id.org/coato/coat_00016>)
+         and (<https://w3id.org/pmd/co/PMD_0025006> some coat_00016)
     
     
 Class: <https://w3id.org/coato/#coat_00111>
@@ -1535,7 +1535,7 @@ Class: <https://w3id.org/coato/#coat_00129>
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A plasma is a material that is in the plasma state."@en,
         rdfs:label "plasma"@en,
-        <https://w3id.org/coato/coat_00001> "Revisit this issue with the PMD Core folks. Their ontology has aggregate state values, but only as value specifications, but not as qualities.
+        coat_00001 "Revisit this issue with the PMD Core folks. Their ontology has aggregate state values, but only as value specifications, but not as qualities.
 
 The distinction between chemical substance and material in PMDCore is not clear to me. Hence, I am not sure whether gas should be defined as a kind of chemical substance of material."
     
@@ -1554,7 +1554,7 @@ Class: <https://w3id.org/coato/#coat_00131>
     Annotations: 
         <http://purl.obolibrary.org/obo/IAO_0000115> "A gas is a material that is in the gas state."@en,
         rdfs:label "gas"@en,
-        <https://w3id.org/coato/coat_00001> "Revisit this issue with the PMD Core folks. Their ontology has aggregate state values, but only as value specifications, but not as qualities."
+        coat_00001 "Revisit this issue with the PMD Core folks. Their ontology has aggregate state values, but only as value specifications, but not as qualities."
     
     EquivalentTo: 
         <https://w3id.org/pmd/co/PMD_0000000>
@@ -1843,183 +1843,6 @@ Class: <https://w3id.org/coato/#coat_00170>
         <https://w3id.org/coato/#coat_00169>
     
     
-Class: <https://w3id.org/coato/coat_00000>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Pulse behaviour is a process characteristic that describes the temporal pattern of variation of electrical power or voltage applied during a pulsed directe current sputtering process, including the timing, duration, frequency, amplitude, and waveform of pulses delivered to the plasma."@en,
-        rdfs:label "pulse behaviour"@en
-    
-    SubClassOf: 
-        <https://w3id.org/pmd/co/PMD_0000008>
-         and (<https://w3id.org/pmd/co/PMD_0025006> some <https://w3id.org/coato/#coat_00001>)
-    
-    
-Class: <https://w3id.org/coato/coat_00002>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A magnetron is a sputter system that is designed to generate and sustain a plasma by means of a magnetic field arranged near the target surface, such that charged particles, particularly electrons, are confined and guided to increase ionization efficiency and thereby enhance the sputtering of target material and its subsequent deposition onto a substrate."@en,
-        rdfs:label "magnetron"@en
-    
-    EquivalentTo: 
-        <https://w3id.org/coato/#coat_00031>
-         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <https://w3id.org/coato/#coat_00030>)
-    
-    
-Class: <https://w3id.org/coato/coat_00004>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Electron temperature is a thermal quality that characterizes the average kinetic energy of electrons in a plasma.",
-        rdfs:label "Elektronentemperatur"@de,
-        rdfs:label "electron temperature"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00096>,
-        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00129>
-    
-    
-Class: <https://w3id.org/coato/coat_00005>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Average, or arithmetic average of profile height deviations from the mean line.",
-        rdfs:label "average roughness (Ra)"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00125>
-    
-    
-Class: <https://w3id.org/coato/coat_00006>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Rautiefe",
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Rt is the vertical distance between the highest peak and the deepest valley within the evaluation length.",
-        rdfs:label "roughness depth (Rt)"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00125>
-    
-    
-Class: <https://w3id.org/coato/coat_00007>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Extinktionskoeffizient"@de,
-        rdfs:label "extinction coefficient"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00126>
-    
-    
-Class: <https://w3id.org/coato/coat_00008>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Crystallinity is a morphological quality that inheres in a material entity and characterizes the degree to which its constituent atoms, molecules, or structural units are arranged in a regular, periodic lattice structure."@en,
-        rdfs:label "Kristallinität",
-        rdfs:label "crystallinity"@en
-    
-    SubClassOf: 
-        <https://w3id.org/pmd/co/PMD_0020131>
-    
-    
-Class: <https://w3id.org/coato/coat_00009>
-
-    Annotations: 
-        rdfs:label "Schichtspannungen"@de,
-        rdfs:label "thin-film stresses"@en,
-        <https://w3id.org/coato/coat_00001> "Add definition"
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00089>,
-        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00017>
-    
-    
-Class: <https://w3id.org/coato/coat_00010>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Heavy particle temperature is a termal quality that characterizes the average kinetic energy of the heavy particles in a plasma, such as ions, atoms, and neutral molecules, excluding electrons."@en,
-        rdfs:label "Schwerteilchentemperatur"@de,
-        rdfs:label "heavy particle temperature"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00096>,
-        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00129>
-    
-    
-Class: <https://w3id.org/coato/coat_00011>
-
-    Annotations: 
-        rdfs:label "Substratetemperatur"@de,
-        rdfs:label "substrate temperature"@en
-    
-    EquivalentTo: 
-        <https://w3id.org/pmd/co/PMD_0000967>
-         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00026>)
-    
-    SubClassOf: 
-        <https://w3id.org/pmd/co/PMD_0000967>
-    
-    
-Class: <https://w3id.org/coato/coat_00012>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the nitrogen in a gas mixture.",
-        rdfs:label "N2 partial pressure"@en
-    
-    EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
-         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020038>)
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
-    
-    
-Class: <https://w3id.org/coato/coat_00013>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the oxygen in a gas mixture.",
-        rdfs:label "O2 partial pressure"@en
-    
-    EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
-         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020091>)
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
-    
-    
-Class: <https://w3id.org/coato/coat_00014>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the argon in a gas mixture.",
-        rdfs:label "Ar partial pressure"@en
-    
-    EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
-         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020041>)
-    
-    
-Class: <https://w3id.org/coato/coat_00015>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of H20 molecules in a gas mixture.",
-        <http://purl.obolibrary.org/obo/IAO_0000116> "H20 (water) is currently not included in PMDCore. As soon as it is added, the corresponding axiom 
-'partial pressure'
- and ('quality of' some 'portion of water')
-should be added.",
-        rdfs:label "H20 partial pressure"@en
-    
-    SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
-    
-    
-Class: <https://w3id.org/coato/coat_00016>
-
-    Annotations: 
-        rdfs:label "application of substance"@en,
-        <http://www.w3.org/2004/02/skos/core#definition> "The application of (a) substance is the process of applying a material or substance to a surface or within a system."
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/BFO_0000015>
-    
-    
 Class: <https://w3id.org/pmd/co/PMD_0000000>
 
     
@@ -2034,7 +1857,7 @@ Class: <https://w3id.org/pmd/co/PMD_0000512>
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "state of matter"@en,
         rdfs:seeAlso "http://purl.allotrope.org/ontologies/quality#AFQ_0000111",
-        <https://w3id.org/coato/coat_00001> "In PMDCore 3.0.0 aggregate state is defined as being specified by an 'aggregate state value' (which is a value specification i.e., a generically dependent continuant). 
+        coat_00001 "In PMDCore 3.0.0 aggregate state is defined as being specified by an 'aggregate state value' (which is a value specification i.e., a generically dependent continuant). 
 That's problematic. Address with PMDCore folks."
     
     SubClassOf: 
@@ -2103,6 +1926,183 @@ Class: <https://w3id.org/pmd/co/PMD_0020148>
 Class: <https://w3id.org/pmd/co/PMD_0050153>
 
     
+Class: coat_00000
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Pulse behaviour is a process characteristic that describes the temporal pattern of variation of electrical power or voltage applied during a pulsed directe current sputtering process, including the timing, duration, frequency, amplitude, and waveform of pulses delivered to the plasma."@en,
+        rdfs:label "pulse behaviour"@en
+    
+    SubClassOf: 
+        <https://w3id.org/pmd/co/PMD_0000008>
+         and (<https://w3id.org/pmd/co/PMD_0025006> some <https://w3id.org/coato/#coat_00001>)
+    
+    
+Class: coat_00002
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A magnetron is a sputter system that is designed to generate and sustain a plasma by means of a magnetic field arranged near the target surface, such that charged particles, particularly electrons, are confined and guided to increase ionization efficiency and thereby enhance the sputtering of target material and its subsequent deposition onto a substrate."@en,
+        rdfs:label "magnetron"@en
+    
+    EquivalentTo: 
+        <https://w3id.org/coato/#coat_00031>
+         and (<http://purl.obolibrary.org/obo/BFO_0000051> some <https://w3id.org/coato/#coat_00030>)
+    
+    
+Class: coat_00004
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Electron temperature is a thermal quality that characterizes the average kinetic energy of electrons in a plasma.",
+        rdfs:label "Elektronentemperatur"@de,
+        rdfs:label "electron temperature"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00096>,
+        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00129>
+    
+    
+Class: coat_00005
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Average, or arithmetic average of profile height deviations from the mean line.",
+        rdfs:label "average roughness (Ra)"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00125>
+    
+    
+Class: coat_00006
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Rautiefe",
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Rt is the vertical distance between the highest peak and the deepest valley within the evaluation length.",
+        rdfs:label "roughness depth (Rt)"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00125>
+    
+    
+Class: coat_00007
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Extinktionskoeffizient"@de,
+        rdfs:label "extinction coefficient"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00126>
+    
+    
+Class: coat_00008
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Crystallinity is a morphological quality that inheres in a material entity and characterizes the degree to which its constituent atoms, molecules, or structural units are arranged in a regular, periodic lattice structure."@en,
+        rdfs:label "Kristallinität",
+        rdfs:label "crystallinity"@en
+    
+    SubClassOf: 
+        <https://w3id.org/pmd/co/PMD_0020131>
+    
+    
+Class: coat_00009
+
+    Annotations: 
+        rdfs:label "Schichtspannungen"@de,
+        rdfs:label "thin-film stresses"@en,
+        coat_00001 "Add definition"
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00089>,
+        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00017>
+    
+    
+Class: coat_00010
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "Heavy particle temperature is a termal quality that characterizes the average kinetic energy of the heavy particles in a plasma, such as ions, atoms, and neutral molecules, excluding electrons."@en,
+        rdfs:label "Schwerteilchentemperatur"@de,
+        rdfs:label "heavy particle temperature"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00096>,
+        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00129>
+    
+    
+Class: coat_00011
+
+    Annotations: 
+        rdfs:label "Substratetemperatur"@de,
+        rdfs:label "substrate temperature"@en
+    
+    EquivalentTo: 
+        <https://w3id.org/pmd/co/PMD_0000967>
+         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00026>)
+    
+    SubClassOf: 
+        <https://w3id.org/pmd/co/PMD_0000967>
+    
+    
+Class: coat_00012
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the nitrogen in a gas mixture.",
+        rdfs:label "N2 partial pressure"@en
+    
+    EquivalentTo: 
+        <https://w3id.org/coato/#coat_00150>
+         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020038>)
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00150>
+    
+    
+Class: coat_00013
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the oxygen in a gas mixture.",
+        rdfs:label "O2 partial pressure"@en
+    
+    EquivalentTo: 
+        <https://w3id.org/coato/#coat_00150>
+         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020091>)
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00150>
+    
+    
+Class: coat_00014
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of the argon in a gas mixture.",
+        rdfs:label "Ar partial pressure"@en
+    
+    EquivalentTo: 
+        <https://w3id.org/coato/#coat_00150>
+         and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020041>)
+    
+    
+Class: coat_00015
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A partial pressure of H20 molecules in a gas mixture.",
+        <http://purl.obolibrary.org/obo/IAO_0000116> "H20 (water) is currently not included in PMDCore. As soon as it is added, the corresponding axiom 
+'partial pressure'
+ and ('quality of' some 'portion of water')
+should be added.",
+        rdfs:label "H20 partial pressure"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00150>
+    
+    
+Class: coat_00016
+
+    Annotations: 
+        rdfs:label "application of substance"@en,
+        <http://www.w3.org/2004/02/skos/core#definition> "The application of (a) substance is the process of applying a material or substance to a surface or within a system."
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
 Individual: <https://w3id.org/coato/#coat_00052>
 
     Annotations: 
@@ -2158,7 +2158,7 @@ Individual: <https://w3id.org/coato/#coat_00060>
     
     
 DisjointClasses: 
-    <https://w3id.org/coato/coat_00012>,<https://w3id.org/coato/coat_00013>,<https://w3id.org/coato/coat_00014>,<https://w3id.org/coato/coat_00015>
+    coat_00012,coat_00013,coat_00014,coat_00015
 
 DisjointClasses: 
     <https://w3id.org/coato/#coat_00055>,<https://w3id.org/coato/#coat_00056>,<https://w3id.org/coato/#coat_00057>
