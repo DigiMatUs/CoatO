@@ -354,6 +354,9 @@ In this example (a portion of) gold and (a portion of) silver are both object ag
         rdfs:label "consists of"@en
     
     
+ObjectProperty: <https://w3id.org/pmd/co/PMD_0000009>
+
+    
 ObjectProperty: <https://w3id.org/pmd/co/PMD_0025006>
 
     
@@ -535,13 +538,13 @@ Class: <https://w3id.org/coato/#coat_00000>
 Class: <https://w3id.org/coato/#coat_00001>
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "Pulse behaviour is a process attribute that describes the temporal pattern of variation of electrical power or voltage applied during a pulsed direct current sputtering process.",
         <http://purl.obolibrary.org/obo/IAO_0000115> "gepulstes DC-Sputtern ist ein DC-Sputtern, in dem ein gepulster Gleichspannung verwendet wird"@en,
         rdfs:label "gepulstes DC-Sputtern"@de,
         rdfs:label "pulsed direct current sputtering"@en
     
-    SubClassOf: 
+    EquivalentTo: 
         <https://w3id.org/coato/#coat_00004>
+         and (<https://w3id.org/pmd/co/PMD_0000009> some coat_00000)
     
     
 Class: <https://w3id.org/coato/#coat_00002>
@@ -1062,6 +1065,7 @@ Class: <https://w3id.org/coato/#coat_00050>
         rdfs:label "pulse mode"@en
     
     SubClassOf: 
+        coat_00000,
         <https://w3id.org/coato/#coat_00044>
     
     
@@ -1684,19 +1688,6 @@ However, according to Hermit part_of is not a simple property (probably because 
          and (<http://purl.obolibrary.org/obo/BFO_0000050> some <https://w3id.org/coato/#coat_00117>)
     
     
-Class: <https://w3id.org/coato/#coat_00150>
-
-    Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "In a mixture of gases, each constituent gas has a partial pressure which is the notional pressure of that constituent gas as if it alone occupied the entire volume of the original mixture at the same temperature."@en,
-        <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Partial_pressure"@en,
-        rdfs:label "partial pressure"@en
-    
-    SubClassOf: 
-        <https://w3id.org/pmd/co/PMD_0000896>,
-        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00131>,
-        <http://purl.obolibrary.org/obo/RO_0000080> exactly 1 <https://w3id.org/coato/#coat_00148>
-    
-    
 Class: <https://w3id.org/coato/#coat_00152>
 
     Annotations: 
@@ -2047,11 +2038,11 @@ Class: coat_00012
         rdfs:label "N2 partial pressure"@en
     
     EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
          and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020038>)
     
     SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
     
     
 Class: coat_00013
@@ -2061,11 +2052,11 @@ Class: coat_00013
         rdfs:label "O2 partial pressure"@en
     
     EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
          and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020091>)
     
     SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
     
     
 Class: coat_00014
@@ -2075,7 +2066,7 @@ Class: coat_00014
         rdfs:label "Ar partial pressure"@en
     
     EquivalentTo: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
          and (<http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/pmd/co/PMD_0020041>)
     
     
@@ -2090,7 +2081,7 @@ should be added.",
         rdfs:label "H20 partial pressure"@en
     
     SubClassOf: 
-        <https://w3id.org/coato/#coat_00150>
+        coat_00150
     
     
 Class: coat_00016
@@ -2101,6 +2092,56 @@ Class: coat_00016
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/BFO_0000015>
+    
+    
+Class: coat_00017
+
+    Annotations: 
+        rdfs:label "pulse frequency"@en
+    
+    SubClassOf: 
+        coat_00000
+    
+    
+Class: coat_00018
+
+    Annotations: 
+        rdfs:label "anode time"@en
+    
+    SubClassOf: 
+        coat_00000
+    
+    
+Class: coat_00019
+
+    Annotations: 
+        rdfs:label "duty cycle"@en
+    
+    SubClassOf: 
+        coat_00000
+    
+    
+Class: coat_00020
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A seed layer is a layer deposited onto a substrate before the main film deposition to promote the desired nucleation, growth, crystallographic orientation, adhesion, or electrical properties of the subsequently deposited material.",
+        rdfs:label "seed layer"@en
+    
+    SubClassOf: 
+        <https://w3id.org/coato/#coat_00016>
+    
+    
+Class: coat_00150
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "In a mixture of gases, each constituent gas has a partial pressure which is the notional pressure of that constituent gas as if it alone occupied the entire volume of the original mixture at the same temperature."@en,
+        <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Partial_pressure"@en,
+        rdfs:label "partial pressure"@en
+    
+    SubClassOf: 
+        <https://w3id.org/pmd/co/PMD_0000896>,
+        <http://purl.obolibrary.org/obo/RO_0000080> some <https://w3id.org/coato/#coat_00131>,
+        <http://purl.obolibrary.org/obo/RO_0000080> exactly 1 <https://w3id.org/coato/#coat_00148>
     
     
 Individual: <https://w3id.org/coato/#coat_00052>
@@ -2159,6 +2200,9 @@ Individual: <https://w3id.org/coato/#coat_00060>
     
 DisjointClasses: 
     coat_00012,coat_00013,coat_00014,coat_00015
+
+DisjointClasses: 
+    coat_00017,coat_00018,coat_00019,<https://w3id.org/coato/#coat_00050>
 
 DisjointClasses: 
     <https://w3id.org/coato/#coat_00055>,<https://w3id.org/coato/#coat_00056>,<https://w3id.org/coato/#coat_00057>
